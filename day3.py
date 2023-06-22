@@ -3,7 +3,7 @@
 # Random choose a random choice
 # Ask user to input choice
 # Conditional statements
-# If same print lie, else print winner
+# If same print tie, else print winner
 # Jeremy
 ############################################################
 
