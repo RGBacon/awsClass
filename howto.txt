@@ -1,0 +1,15 @@
+git status
+git remote add origin REPOURL.git
+git config pull.rebase true
+git pull origin main
+
+git config --global user.email "youremail@mail.com"
+git config --global user.name "John Doe"
+git commit -m "first time setup"
+
+
+
+git rebase --continue
+git pull origin main
+
+git push origin main
