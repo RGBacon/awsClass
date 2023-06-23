@@ -34,24 +34,35 @@ cars.remove("Mercedes")  # Removes "Mercedes" from the list
 cars.pop(1)  # Removes element at index 1
 cars.clear()  # Clears the list
 
+# Sorting Lists
+numberList = [1, 2, 4, 6, 12, 61, 412, 15, 99]
+print(numberList)
+numberList.sort()  # Sorts the list in ascending order
+print(numberList)
+numberList.sort(key=str.lower)  # Sorts the list case-insensitively
+print(numberList)
+numberList.sort(reverse=True)  # Sorts the list in descending order
+print(numberList)
+
+# Copying Lists
+numberList2 = numberList.copy()  # Creates a copy of numberList
+
 # Output
 print(b, l)  # Prints both an integer and a string with a comma separator
 
 # Escape Characters
-print("We are currently in class and here is a \"quote\""
-      )  # Using double quotes within a double-quoted string
-print('We are currently in class and here is a "quote"'
-      )  # Using single quotes within a single-quoted string
+print("We are currently in class and here is a \"quote\"")  # Using double quotes within a double-quoted string
+print('We are currently in class and here is a "quote"')  # Using single quotes within a single-quoted string
 
 # Mini Challenge
 repCities = [
-  "Charlotte", "Salisbury", "Greenville", "Seattle", "Atlanta", "Hampton",
-  "Tashkent", "East Orange"
+    "Charlotte", "Salisbury", "Greenville", "Seattle", "Atlanta", "Hampton",
+    "Tashkent", "East Orange"
 ]
 
 userCity = input("What city do you represent?: ").capitalize()
 
 if userCity in repCities:
-  print("Your city is represented")
+    print("Your city is represented")
 else:
-  print("Your city is not represented")
+    print("Your city is not represented")
