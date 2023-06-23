@@ -153,12 +153,21 @@ print("Goodbye")
 #starting off the day with IF and ELIF and ELSE
 age = 23
 
+
+# IS AGE >= 18 IF THAT IS TRUE:
 if age >= 18:
   print("adult")
+  print("ray")
+
+#
 elif age >= 13:
   print("teen")
 else:
   print("child")
+
+
+
+
 
 if age < 13:
   print("child")
