@@ -1,8 +1,58 @@
 import math
+import json
+from emoji import emojize
+import emojis
+import wikipedia
 
 ###################################
-# OS System module
+# PIP Example
 ###################################
+
+# we installed a package named emoji
+print(emojize(":thumbs_up:"))
+
+emojified = emojis.encode("This is an appropriate and inappropriate emoji depending on how it is used :wink:")
+
+print(emojified)
+
+# wikipedia example
+randomTitle = wikipedia.random(1)
+result = wikipedia.summary(randomTitle)
+print(f"{randomTitle} | {result}")
+
+###################################
+# JSON
+###################################
+
+x = '{ "name":"John", "age":30, "city":"New York"}'
+
+y = json.loads(x)
+print(y["name"])
+
+a = {
+  "name": "John",
+  "age": 30,
+  "city": "New York"
+}
+
+b = json.dumps(a)
+
+print(b)
+
+c = {
+  "name": "John",
+  "age": 30,
+  "married": True,
+  "divorced": False,
+  "children": ("Ann","Billy"),
+  "pets": None,
+  "cars": [
+    {"model": "BMW 230", "mpg": 27.5},
+    {"model": "Ford Edge", "mpg": 24.1}
+  ]
+}
+
+print(json.dumps(c, indent=4,sort_keys=True))
 
 
 ###################################
@@ -65,7 +115,7 @@ f2 = open("todo.txt", "w") # write
 f2.write("Take out the trash")
 f2.close()
 f3 = open("diary.txt", "a") # append
-f3.write("Lets hope the power doesnt go out mid class")
+# f3.write("Lets hope the power doesnt go out mid class")
 f3.close()
 
 ###################################
